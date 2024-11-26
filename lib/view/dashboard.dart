@@ -12,7 +12,7 @@ class Dashboard extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Dashboard'),
         centerTitle: true,
-        elevation: 4.0, // Adds a shadow to the AppBar for a modern look
+        elevation: 4.0,
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
