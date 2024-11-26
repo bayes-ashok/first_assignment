@@ -59,8 +59,7 @@ class _ArithmeticState extends State<Arithmetic> {
               width: double.infinity,
               child: ElevatedButton(
                 onPressed: () {
-                  // State lai change gara
-                  // buil method ma feri jau ani refresh gara
+                  
                   setState(() {
                     result = first + second;
                   });
