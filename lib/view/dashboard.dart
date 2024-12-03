@@ -20,9 +20,26 @@ class Dashboard extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            const Text(
-              'Welcome to the Calculator Dashboard!',
-              textAlign: TextAlign.center,
+            RichText(
+              text: const TextSpan(
+                  text: "Welcome to",
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 20,
+                  ),
+                  children: <TextSpan>[
+                    TextSpan(
+                      text: ' Calculator ',
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.amber,
+                        fontSize: 20,
+                      ),
+                    ),
+                    TextSpan(
+                      text: "App",
+                    )
+                  ]),
             ),
             const SizedBox(height: 30),
             SizedBox(
