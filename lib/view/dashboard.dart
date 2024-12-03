@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'arithmetic.dart';
-import 'simple_interest.dart';
-import 'area_of_circle.dart';
 
 class Dashboard extends StatelessWidget {
   const Dashboard({super.key});
@@ -46,9 +43,9 @@ class Dashboard extends StatelessWidget {
               width: double.infinity,
               child: ElevatedButton.icon(
                 onPressed: () {
-                  Navigator.push(
+                  Navigator.pushNamed(
                     context,
-                    MaterialPageRoute(builder: (context) => const Arithmetic()),
+                    '/arithmetic',
                   );
                 },
                 label: const Text(
@@ -70,10 +67,9 @@ class Dashboard extends StatelessWidget {
               width: double.infinity,
               child: ElevatedButton.icon(
                 onPressed: () {
-                  Navigator.push(
+                  Navigator.pushNamed(
                     context,
-                    MaterialPageRoute(
-                        builder: (context) => const SimpleInterest()),
+                    '/si',
                   );
                 },
                 label: const Text(
@@ -95,10 +91,9 @@ class Dashboard extends StatelessWidget {
               width: double.infinity,
               child: ElevatedButton.icon(
                 onPressed: () {
-                  Navigator.push(
+                  Navigator.pushNamed(
                     context,
-                    MaterialPageRoute(
-                        builder: (context) => const AreaOfCircle()),
+                    '/area',
                   );
                 },
                 label: const Text(
@@ -110,6 +105,30 @@ class Dashboard extends StatelessWidget {
                       const EdgeInsets.symmetric(vertical: 15, horizontal: 30),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(12),
+                  ),
+                  elevation: 5,
+                ),
+              ),
+            ),
+            const SizedBox(height: 30),
+            SizedBox(
+              width: double.infinity,
+              child: ElevatedButton.icon(
+                onPressed: () {
+                  Navigator.pushNamed(
+                    context,
+                    '/player',
+                  );
+                },
+                label: const Text(
+                  'NPL Player list',
+                  style: TextStyle(fontSize: 16),
+                ),
+                style: ElevatedButton.styleFrom(
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 15, horizontal: 30),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12), // Rounded corners
                   ),
                   elevation: 5,
                 ),
