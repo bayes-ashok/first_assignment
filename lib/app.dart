@@ -1,6 +1,7 @@
 import 'package:first_assignment/view/area_of_circle.dart';
 import 'package:first_assignment/view/arithmetic.dart';
 import 'package:first_assignment/view/container_view.dart';
+import 'package:first_assignment/view/data_table_example.dart';
 import 'package:first_assignment/view/flexible_expanded_view.dart';
 import 'package:first_assignment/view/image_view.dart';
 import 'package:first_assignment/view/simple_interest.dart';
@@ -33,6 +34,7 @@ class MyApp extends StatelessWidget {
         '/img': (context) => const ImageView(),
         '/flexible': (context) => const FlexibleExpandedView(),
         '/snack': (context) => const SnackbarView(),
+        '/table': (context) => const DataTableExample(),
       },
     );
   }
